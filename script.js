@@ -6,13 +6,13 @@ const projects = [
   },
   {
     number: "02",
-    title: "Coming Soon",
-    url: "#",
+    title: "Random Color",
+    url: "projects/02-randomColor/index.html",
   },
   {
     number: "03",
-    title: "Coming Soon",
-    url: "#",
+    title: "Greetings",
+    url: "projects/03-Greetings/index.html",
   },
   {
     number: "04",
