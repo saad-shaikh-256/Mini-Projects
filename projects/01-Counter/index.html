@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body
+    class="h-screen w-screen flex-Center bg-slate-100 text-slate-900 font-roboto"
+  >
+    <div
+      class="h-fit w-fit max-w-[90%] flex-Center flex-col gap-10"
+      id="container"
+    >
+      <h1 class="text-5xl font-semibold">Counter</h1>
+      <div id="counter" class="text-7xl font-medium">0</div>
+      <div
+        class="buttons flex-Center h-fit w-full gap-4 flex-wrap font-medium text-base"
+      >
+        <button
+          id="decrement"
+          class="h-fit min-w-[150px] w-fit grow bg-slate-100 cursor-pointer py-2 rounded-xl border-[1.5px] uppercase shadow-[0px_3px_0px_1px_#000000] active:shadow-[0px_0px_0px_0px_#000000]"
+        >
+          Decrement
+        </button>
+        <button
+          id="increment"
+          class="h-fit min-w-[150px] w-fit grow bg-slate-100 cursor-pointer py-2 rounded-xl border-[1.5px] uppercase shadow-[0px_3px_0px_1px_#000000] active:shadow-[0px_0px_0px_0px_#000000]"
+        >
+          Increment
+        </button>
+        <button
+          id="reset"
+          class="h-fit min-w-[150px] w-fit grow bg-slate-100 cursor-pointer py-2 rounded-xl border-[1.5px] uppercase shadow-[0px_3px_0px_1px_#000000] active:shadow-[0px_0px_0px_0px_#000000]"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

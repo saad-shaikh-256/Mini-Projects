@@ -1,8 +1,8 @@
 const projects = [
   {
     number: "01",
-    title: "Coming Soon",
-    url: "#",
+    title: "Counter",
+    url: "projects/01-Counter/index.html",
   },
   {
     number: "02",
@@ -50,4 +50,3 @@ projectContainer.innerHTML = projects
     `
   )
   .join("");
-
