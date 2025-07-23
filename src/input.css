@@ -6,6 +6,7 @@
   /* Fonts */
   --font-poppins: Poppins, "sans-serif";
   --font-roboto: Roboto, "sans-serif";
+  --font-afacad: Afacad, "sans-serif";
 
   /* Breakpoints */
   --breakpoint-xs: 480px;
@@ -19,7 +20,7 @@
 html,
 body {
   overflow-x: hidden;
-  @apply h-screen w-screen font-poppins;
+  @apply min-h-dvh h-fit w-screen font-poppins;
 }
 
 ::selection {
@@ -31,25 +32,6 @@ body {
 }
 @utility flex-Between {
   @apply flex justify-between items-center;
-}
-
-@utility index-Container {
-  @apply h-full w-full bg-neutral-900 text-white p-4 flex flex-col gap-8;
-}
-@utility index-Heading {
-  @apply h-fit w-full text-center text-2xl md:text-3xl font-medium p-2;
-}
-@utility project-Index {
-  @apply h-fit w-full flex flex-wrap justify-start items-center gap-4 px-8 sm:px-16 md:px-22;
-}
-@utility project-Box {
-  @apply h-fit w-full md:w-[48%] lg:w-[32%] xl:w-[24%] border border-white rounded-lg px-2 py-4 flex-Center flex-col hover:scale-95 transition-transform duration-300 gap-3 grow;
-}
-@utility project-Number {
-  @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
-}
-@utility project-Title {
-  @apply text-base md:text-lg lg:text-xl font-medium;
 }
 
 @layer Components {

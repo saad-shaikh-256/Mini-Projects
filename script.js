@@ -1,52 +1,57 @@
-const projects = [
+const tasks = [
   {
-    number: "01",
+    id: "01",
     title: "Counter",
     url: "projects/01-Counter/index.html",
   },
   {
-    number: "02",
+    id: "02",
     title: "Random Color",
     url: "projects/02-randomColor/index.html",
   },
   {
-    number: "03",
+    id: "03",
     title: "Greetings",
     url: "projects/03-Greetings/index.html",
   },
   {
-    number: "04",
+    id: "04",
     title: "Coming Soon",
     url: "#",
   },
   {
-    number: "05",
+    id: "05",
     title: "Coming Soon",
     url: "#",
   },
   {
-    number: "06",
+    id: "06",
     title: "Coming Soon",
     url: "#",
   },
   {
-    number: "07",
+    id: "07",
     title: "Coming Soon",
     url: "#",
   },
 ];
 
-// Get the container element
-const projectContainer = document.getElementById("project-Container");
+const container = document.getElementById("taskContainer");
 
-// Generate and inject HTML
-projectContainer.innerHTML = projects
-  .map(
-    (project) => `
-      <a href="${project.url}" class="project-Box">
-        <div class="project-Number">${project.number}</div>
-        <div class="project-Title">${project.title}</div>
-      </a>
-    `
-  )
-  .join("");
+tasks.forEach((task) => {
+  const card = document.createElement("a");
+  card.href = task.url || "#";
+  card.className =
+    "h-fit bg-gray-800 hover:bg-gray-700 active:bg-gray-700 hover:scale-[98%] active:scale-[98%] border border-white p-6 rounded-md flex flex-col gap-3";
+
+  card.innerHTML = `
+          <div class="text-white text-center font-medium text-2xl md:text-4xl">
+            ${task.id}
+          </div>
+          <div class="text-white text-center font-medium text-lg md:text-xl">
+            ${task.title}
+          </div>
+        `;
+
+  container.appendChild(card);
+});

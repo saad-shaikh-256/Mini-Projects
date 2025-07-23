@@ -18,27 +18,15 @@
     <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
   </head>
   <body
-    class="h-screen w-screen flex-Center bg-linear-to-b from-purple-500 via-indigo-500 to-blue-500 text-slate-900"
+    class="flex-Center bg-white text-gray-800 flex flex-col justify-center items-center gap-3"
   >
     <div
-      class="main-Container h-fit w-fit max-w-[80%] bg-white px-6 py-8 rounded-2xl shadow-lg flex-Center flex-col gap-4"
+      id="greeting"
+      class="h-fit w-fit text-xl font-medium text-orange-500 font-afacad"
     >
-      <div class="h-fit w-fit text-6xl" id="timebased-Emoji">☀️</div>
-      <div class="h-fit w-full flex-col flex-Center gap-2">
-        <div
-          class="h-fit w-full text-center font-semibold text-3xl px-4"
-          id="greeting"
-        >
-          Loading Greeting
-        </div>
-        <div
-          class="subtext h-fit w-fit text-center font-medium text-base text-neutral-500"
-        >
-          Hope you have a wonderfull day
-        </div>
-      </div>
+      Loading Greeting
     </div>
-
+    <div id="time" class="text-5xl font-black font-afacad">00:00:00</div>
     <script src="script.js"></script>
   </body>
 </html>
