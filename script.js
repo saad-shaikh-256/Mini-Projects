@@ -16,8 +16,8 @@ const tasks = [
   },
   {
     id: "04",
-    title: "Coming Soon",
-    url: "#",
+    title: "Word Counter",
+    url: "projects/04-wordCounter/index.html",
   },
   {
     id: "05",

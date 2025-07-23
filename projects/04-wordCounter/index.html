@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Hugeicons -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+  </head>
+  <body
+    class="flex-Center bg-linear-to-bl from-violet-600 to-purple-600 font-roboto"
+  >
+    <div
+      class="main-Container h-[300px] max-h-4/5 w-[700px] max-w-4/5 relative flex-Center"
+    >
+      <textarea
+        name=""
+        id="text-Input"
+        class="bg-white h-full w-full p-4 rounded-lg shadow-lg outline-none text-base resize-none"
+        placeholder="Start typing here..."
+      ></textarea>
+
+      <div
+        class="count-Container absolute bg-neutral-900 -bottom-12 w-3/4 rounded-lg text-white flex p-6 gap-4 shadow-xl"
+      >
+        <div
+          class="word-Container h-fit w-full text-center flex flex-col gap-1"
+        >
+          <div id="word-Count" class="text-3xl font-semibold text-neutral-100">
+            0
+          </div>
+          <div class="h-fit text-base text-neutral-300">Words</div>
+        </div>
+        <div
+          class="character-Container h-fit w-full text-center flex flex-col gap-1"
+        >
+          <div
+            id="character-Count"
+            class="text-3xl font-semibold text-neutral-100"
+          >
+            0
+          </div>
+          <div class="h-fit text-base text-neutral-300">Characters</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
