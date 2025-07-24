@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Hugeicons -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+
+    <style>
+      @keyframes spin-tail {
+        0% {
+          transform: rotateX(0);
+        }
+
+        100% {
+          transform: rotateX(1980deg);
+        }
+      }
+
+      @keyframes spin-head {
+        0% {
+          transform: rotateX(0);
+        }
+
+        100% {
+          transform: rotateX(2160deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="flex-Center"
+    style="background: linear-gradient(to top, #5d92ff 50%, #ffd55c 50%) fixed"
+  >
+    <div
+      id="main-Container"
+      class="bg-white w-4/5 max-w-[400px] p-12 drop-shadow-lg rounded-xl flex flex-col gap-16 flex-Center"
+      style="-webkit-perspective: 300px; perspective: 300px"
+    >
+      <div
+        id="stats-Container"
+        class="w-full flex-Center gap-5 font-medium text-gray-800 text-base"
+      >
+        <div id="heads-Counter">Heads : 0</div>
+        <div id="tails-Counter">Tails : 0</div>
+      </div>
+
+      <div
+        id="coin-Container"
+        class="h-36 w-36 relative"
+        style="
+          -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+        "
+      >
+        <div
+          id="heads"
+          class="absolute h-full w-full"
+          style="
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          "
+        >
+          <img src="Assets/headImg.svg" alt="Heads" class="w-36 h-auto" />
+        </div>
+        <div
+          id="tails"
+          class="absolute h-full w-full rotate-x-180"
+          style="
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          "
+        >
+          <img src="Assets/tailImg.svg" alt="Tails" class="w-36 h-auto" />
+        </div>
+      </div>
+
+      <div id="buttons" class="h-fit w-full flex-Between gap-4">
+        <button
+          class="w-full bg-blue-500 p-2 font-medium cursor-pointer text-white rounded-lg"
+          id="flip-button"
+        >
+          Flip Coin
+        </button>
+        <button
+          class="w-full bg-transparent p-2 font-medium cursor-pointer border-2 border-blue-500 text-blue-500 rounded-lg"
+          id="reset-button"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

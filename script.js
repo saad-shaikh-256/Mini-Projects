@@ -21,8 +21,8 @@ const tasks = [
   },
   {
     id: "05",
-    title: "Coming Soon",
-    url: "#",
+    title: "Coin Flipper",
+    url: "projects/05-coinFlipper/index.html",
   },
   {
     id: "06",
