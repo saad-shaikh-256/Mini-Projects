@@ -26,8 +26,8 @@ const tasks = [
   },
   {
     id: "06",
-    title: "Coming Soon",
-    url: "#",
+    title: "Fontsize Converter",
+    url: "projects/06-fontsizeConverter/index.html",
   },
   {
     id: "07",

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Hugeicons -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+  </head>
+
+  <body class="flex-Center bg-blue-500">
+    <div
+      class="main-Container h-fit w-[400px] max-w-9/10 bg-white p-6 shadow-2xl rounded-xl flex flex-col gap-8"
+    >
+      <div
+        class="heading-Container text-center text-xl font-semibold text-neutral-700 h-fit w-full"
+      >
+        px to rem
+      </div>
+      <div class="content-Container gap-2 flex-Center text-neutral-800">
+        <div
+          class="px-Container bg-neutral-50 border border-neutral-200 rounded-lg px-4 py-2.5 min-w-[100px] flex-Between gap-1 focus-within:border-blue-500"
+        >
+          <input
+            type="tel"
+            placeholder="16.00"
+            class="w-full outline-none"
+            id="px-Input"
+          />
+          <label class="text-neutral-500">px</label>
+        </div>
+        <i class="hgi hgi-stroke hgi-arrow-data-transfer-horizontal"></i>
+        <div
+          class="rem-Container bg-neutral-50 border border-neutral-200 rounded-lg px-4 py-2.5 min-w-[100px] flex-Between gap-1 focus-within:border-blue-500"
+        >
+          <input
+            type="tel"
+            placeholder="1.0"
+            class="w-full outline-none"
+            id="rem-Input"
+          />
+          <label class="text-neutral-500">rem</label>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
