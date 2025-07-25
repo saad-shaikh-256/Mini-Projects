@@ -34,6 +34,11 @@ const tasks = [
     title: "Calculator",
     url: "projects/07-Calculator/index.html",
   },
+  {
+    id: "08",
+    title: "Story Teller",
+    url: "projects/08-storyTeller/index.html",
+  },
 ];
 
 const container = document.getElementById("taskContainer");

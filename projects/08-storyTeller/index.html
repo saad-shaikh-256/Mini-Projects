@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Hugeicons -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+  </head>
+
+  <body class="flex-Center bg-linear-to-br from-blue-500 to-violet-500">
+    <div
+      class="main-Container h-fit w-[450px] max-w-4/5 bg-white flex-Center flex-col p-8 rounded-lg shadow-lg gap-10"
+    >
+      <div class="w-full flex-Center flex-col gap-2">
+        <h1 class="w-full text-center font-bold text-2xl text-neutral-700">
+          Interactive Story Generator
+        </h1>
+        <h3 class="text-neutral-500 font-medium">Create your unique story</h3>
+      </div>
+      <div class="wrapper-Container grid grid-cols-2 gap-5 w-full">
+        <div class="input-Container flex flex-col w-full gap-1">
+          <label
+            for="name"
+            class="h-fit w-full text-sm font-medium text-neutral-700"
+            >Character Name</label
+          >
+          <input
+            type="text"
+            class="h-fit w-full outline-none focus:border-blue-500 cursor-pointer border-[1.5px] border-neutral-300 rounded-lg px-3.5 py-2"
+            id="name"
+            placeholder="eg. John"
+            required
+          />
+        </div>
+        <div class="input-Container flex flex-col w-full gap-1">
+          <label
+            for="place"
+            class="h-fit w-full text-sm font-medium text-neutral-700"
+            >Place</label
+          >
+          <input
+            type="text"
+            class="h-fit w-full outline-none focus:border-blue-500 cursor-pointer border-[1.5px] border-neutral-300 rounded-lg px-3.5 py-2"
+            id="place"
+            placeholder="eg. Forest"
+            required
+          />
+        </div>
+        <div class="input-Container flex flex-col w-full gap-1">
+          <label
+            for="object"
+            class="h-fit w-full text-sm font-medium text-neutral-700"
+            >Object</label
+          >
+          <input
+            type="text"
+            class="h-fit w-full outline-none focus:border-blue-500 cursor-pointer border-[1.5px] border-neutral-300 rounded-lg px-3.5 py-2"
+            id="object"
+            placeholder="eg. Sword"
+            required
+          />
+        </div>
+        <div class="input-Container flex flex-col w-full gap-1">
+          <label
+            for="action"
+            class="h-fit w-full text-sm font-medium text-neutral-700"
+            >Action</label
+          >
+          <input
+            type="text"
+            class="h-fit w-full outline-none focus:border-blue-500 cursor-pointer border-[1.5px] border-neutral-300 rounded-lg px-3.5 py-2"
+            id="action"
+            placeholder="eg. Fight"
+            required
+          />
+        </div>
+      </div>
+      <button
+        id="generateStory"
+        class="w-full bg-linear-to-r from-blue-500 to-violet-500 text-white p-2.5 rounded-md hover:bg-blue-600 transition-colors active:outline-none active:ring-2 active:ring-blue-500 active:ring-offset-2 cursor-pointer"
+      >
+        Generate Story
+      </button>
+      <div
+        id="storyOutput"
+        class="w-full bg-violet-100 border border-violet-300 p-4 h-fit rounded-lg text-violet-900 hidden"
+      ></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
