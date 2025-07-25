@@ -31,8 +31,8 @@ const tasks = [
   },
   {
     id: "07",
-    title: "Coming Soon",
-    url: "#",
+    title: "Calculator",
+    url: "projects/07-Calculator/index.html",
   },
 ];
 
