@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Hugeicons -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+  </head>
+
+  <body class="flex-Center bg-linear-to-br from-blue-500 to-sky-500">
+    <div
+      class="main-Contain bg-white h-fit w-[400px] max-w-4/5 p-6 rounded-2xl shadow-lg relative flex-Center pt-20 gap-8 flex-col"
+    >
+      <div
+        class="emoji-Container text-5xl bg-linear-to-br from-sky-500 to-blue-500 flex-Center w-24 h-24 rounded-full border-8 border-white absolute -top-12 shadow-md"
+      >
+        💡
+      </div>
+      <!-- Heading -->
+      <div class="text-center flex flex-col gap-1">
+        <h1 class="main-Heading text-2xl font-bold text-gray-800">
+          Number Guesser
+        </h1>
+        <p class="sub-Heading text-sm text-gray-500">
+          Guess a number between 1 and 100
+        </p>
+      </div>
+
+      <div
+        class="guessed-Result h-fit w-full text-center p-3 rounded-xl font-medium hidden"
+      >
+        Your guess is ...
+      </div>
+
+      <!-- Input -->
+      <div class="h-fit w-full flex-Center gap-3">
+        <input
+          type="number"
+          min="1"
+          max="100"
+          id="guessed-Number"
+          placeholder="Enter your guess"
+          class="w-full px-4 py-2 border-[1.5px] border-gray-300 rounded-xl focus:outline-none focus:border-blue-500 transition duration-200"
+        />
+        <button
+          type="submit"
+          class="submit-Input h-[42px] bg-blue-500 text-white px-4 py-2 rounded-xl font-medium transition-all duration-300 active:scale-95 cursor-pointer"
+        >
+          Check
+        </button>
+      </div>
+
+      <div class="flex-Center flex-col gap-3 w-full">
+        <!-- Chances -->
+        <div class="chances-Counter h-fit w-full text-center text-gray-800">
+          You have
+          <span id="chances-Left" class="font-semibold text-blue-500">10</span>
+          chances left.
+        </div>
+
+        <!-- Tip -->
+        <div class="tip-Contianer text-sm text-gray-500">
+          Tip: Listen to your intuition!
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

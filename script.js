@@ -44,6 +44,16 @@ const tasks = [
     title: "Random Joke",
     url: "projects/09-randomJoke/index.html",
   },
+  {
+    id: "10",
+    title: "Guess the Number",
+    url: "projects/10-numberGuesser/index.html",
+  },
+  {
+    id: "...",
+    title: "Comming Soon",
+    url: "#",
+  },
 ];
 
 const container = document.getElementById("taskContainer");
