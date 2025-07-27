@@ -14,7 +14,7 @@ const hideLoader = () => {
   loaderOverlay.classList.add("opacity-0", "pointer-events-none");
   loaderOverlay.classList.remove("opacity-100", "pointer-events-auto");
 };
-const API_KEY = atob("OWI2NzdiMjA2NmFhNDExMTkxMjEzMTYyMDI1MjcwNw==");
+const API_KEY = "9b677b2066aa4111912131620252707";
 
 // Weather code for mapping to custom icons
 const weatherCodes = {

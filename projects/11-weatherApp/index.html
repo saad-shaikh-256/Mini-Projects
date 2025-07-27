@@ -43,7 +43,7 @@
     id="weather-App"
   >
     <div
-      class="main-Container bg-white h-fit w-4/5 max-w-[450px] rounded-3xl shadow-2xl p-5 flex-Center flex-col gap-10 relative"
+      class="main-Container bg-white h-fit w-4/5 max-w-[450px] rounded-3xl shadow-2xl p-5 flex-Center flex-col gap-10 relative overflow-hidden"
     >
       <!-- Loader Overlay -->
       <div
@@ -57,14 +57,14 @@
       <!-- Search Section -->
       <div class="search-Container w-full flex-Center gap-2">
         <div
-          class="input-Wrapper flex-Center gap-3 h-12 w-full px-4 py-2.5 rounded-2xl text-base bg-neutral-50 border-[1.5px] border-neutral-200 text-neutral-800 focus-within:border-purple-500"
+          class="input-Wrapper flex items-center w-fit gap-3 h-12 grow px-4 py-2.5 rounded-2xl text-base bg-neutral-50 border-[1.5px] border-neutral-200 text-neutral-800 focus-within:border-purple-500 overflow-hidden"
         >
           <i
             class="hgi hgi-stroke hgi-search-01 text-lg font-medium text-neutral-400"
           ></i>
           <input
             type="search"
-            class="search-Input h-full outline-none grow placeholder:text-neutral-400"
+            class="search-Input h-full w-fit outline-none grow placeholder:text-neutral-400"
             placeholder="Enter a city"
           />
         </div>
@@ -120,7 +120,7 @@
         <div
           class="hourly-Weather h-fit w-full overflow-hidden px-3 pt-4 border-t border-neutral-200"
         >
-          <ul class="weather-List flex gap-6 overflow-y-auto"></ul>
+          <ul class="weather-List flex gap-6 overflow-x-auto pb-2"></ul>
         </div>
       </div>
     </div>
