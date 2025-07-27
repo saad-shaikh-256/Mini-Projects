@@ -4,7 +4,7 @@ const generateBtn = document.querySelector(".generate-Btn");
 
 // Joke API
 const url =
-  "https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious,political&type=single";
+  "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
 
 const laughingStyles = [
   "😂",

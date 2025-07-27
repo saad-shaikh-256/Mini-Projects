@@ -50,6 +50,11 @@ const tasks = [
     url: "projects/10-numberGuesser/index.html",
   },
   {
+    id: "11",
+    title: "Weather App",
+    url: "projects/11-weatherApp/index.html",
+  },
+  {
     id: "...",
     title: "Comming Soon",
     url: "#",

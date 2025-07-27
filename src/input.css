@@ -35,4 +35,19 @@ body {
 }
 
 @layer Components {
+  #weather-App {
+    .weather-Item {
+      @apply flex-Center flex-col gap-2;
+
+      .time {
+        @apply text-base text-neutral-800;
+      }
+      .weather-Icon {
+        @apply w-7 aspect-square;
+      }
+      .temperature {
+        @apply font-medium text-sm text-neutral-800;
+      }
+    }
+  }
 }
