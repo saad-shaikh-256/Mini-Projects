@@ -50,4 +50,24 @@ body {
       }
     }
   }
+
+  #country-Info {
+    .info-Container {
+      @apply bg-slate-50 border border-slate-200 p-2.5 rounded-xl h-full w-full flex gap-2 min-h-16;
+
+      .icon-Container {
+        @apply text-lg font-medium text-blue-500;
+      }
+      .country-Info {
+        @apply h-full w-full flex flex-col gap-1;
+
+        .info-Heading {
+          @apply text-base font-semibold text-slate-800;
+        }
+        .info-Content {
+          @apply text-sm text-slate-500;
+        }
+      }
+    }
+  }
 }

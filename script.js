@@ -55,6 +55,11 @@ const tasks = [
     url: "projects/11-weatherApp/index.html",
   },
   {
+    id: "12",
+    title: "Country Info",
+    url: "projects/12-countryInfo/index.html",
+  },
+  {
     id: "...",
     title: "Comming Soon",
     url: "#",

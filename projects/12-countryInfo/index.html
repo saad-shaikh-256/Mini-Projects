@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Hugeicons -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+  </head>
+
+  <body class="flex-Center bg-slate-100 py-6" id="country-Info">
+    <div
+      class="main-Container bg-white p-4 sm:p-6 h-fit w-9/10 max-w-md flex-Center flex-col gap-8 rounded-3xl shadow-lg"
+    >
+      <!-- Search & Heading Container -->
+      <div class="search-Container w-full flex flex-col gap-8">
+        <!-- Heading Container -->
+        <div class="text-center">
+          <h1 class="font-heading text-2xl font-bold text-slate-800">
+            Country Explorer
+          </h1>
+          <p class="text-slate-500 mt-1">
+            Your friendly guide to the world's nations
+          </p>
+        </div>
+        <!-- Search Box -->
+        <div
+          class="search-Box flex-Center border-2 border-slate-200 w-full p-2 rounded-full focus-within:border-blue-500 gap-2 overflow-hidden"
+        >
+          <input
+            type="search"
+            class="search-Input h-10 w-full bg-transparent outline-none px-4 text-slate-700 placeholder:text-slate-400 rounded-full"
+            placeholder="Search for a country..."
+          />
+          <button
+            class="search-Button bg-blue-500 flex-shrink-0 flex-Center h-11 w-11 rounded-full text-2xl text-white hover:bg-blue-600 active:scale-90"
+          >
+            <i class="hgi hgi-stroke hgi-search-01"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Loader -->
+      <div id="loader" class="hidden">
+        <div
+          class="w-12 h-12 border-4 border-slate-200 border-t-blue-500 rounded-full animate-spin"
+        ></div>
+      </div>
+
+      <!-- Add this after the loader -->
+      <div id="error-message" class="text-center text-slate-600 hidden">
+        <h2 class="font-bold text-xl">Country Not Found</h2>
+        <p>Please check the spelling and try again.</p>
+      </div>
+
+      <!-- Data Container -->
+      <div class="show-Result h-fit w-full flex-Center flex-col gap-8 hidden">
+        <!-- Flag Container -->
+        <div
+          class="flag-Container h-[230px] w-full flex-Center overflow-hidden"
+        >
+          <img
+            src="https://flagcdn.com/w320/in.png"
+            alt=""
+            class="country-Flag overflow-hidden h-full w-auto"
+            id="country-Flag"
+          />
+        </div>
+        <div class="data-Container grid h-fit w-full grid-cols-2 gap-3">
+          <!-- Country Name  -->
+          <div class="info-Container">
+            <div class="icon-Container">
+              <i class="hgi hgi-stroke hgi-flag-02"></i>
+            </div>
+            <div class="country-Info">
+              <span class="info-Heading" id="country-Name">India</span>
+              <span class="info-Content" id="other-Name"
+                >Republic of India</span
+              >
+            </div>
+          </div>
+          <!-- Country Region -->
+          <div class="info-Container">
+            <div class="icon-Container">
+              <i class="hgi hgi-stroke hgi-maps"></i>
+            </div>
+            <div class="country-Info">
+              <span class="info-Heading">Region</span>
+              <span class="info-Content" id="country-Region"
+                >Asia (Southern Asia)</span
+              >
+            </div>
+          </div>
+
+          <!-- Country Capital -->
+          <div class="info-Container">
+            <div class="icon-Container">
+              <i class="hgi hgi-stroke hgi-location-06"></i>
+            </div>
+            <div class="country-Info">
+              <span class="info-Heading">Capital</span>
+              <span class="info-Content" id="country-Capital">New Delhi</span>
+            </div>
+          </div>
+
+          <!-- country Currency -->
+          <div class="info-Container">
+            <div class="icon-Container">
+              <i class="hgi hgi-stroke hgi-money-04"></i>
+            </div>
+            <div class="country-Info">
+              <span class="info-Heading">Currency</span>
+              <span class="info-Content" id="country-Currency"
+                >Indian rupee (₹)</span
+              >
+            </div>
+          </div>
+
+          <!-- Country Language -->
+          <div class="info-Container">
+            <div class="icon-Container">
+              <i class="hgi hgi-stroke hgi-language-circle"></i>
+            </div>
+            <div class="country-Info">
+              <span class="info-Heading">Languages</span>
+              <span class="info-Content" id="country-Language"
+                >English, Hindi, Tamil</span
+              >
+            </div>
+          </div>
+
+          <!-- Country Population -->
+          <div class="info-Container">
+            <div class="icon-Container">
+              <i class="hgi hgi-stroke hgi-user"></i>
+            </div>
+            <div class="country-Info">
+              <span class="info-Heading">Population</span>
+              <span class="info-Content" id="country-Population"
+                >1,380,004,385</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
