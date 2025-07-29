@@ -60,6 +60,11 @@ const tasks = [
     url: "projects/12-countryInfo/index.html",
   },
   {
+    id: "13",
+    title: "QR Generator",
+    url: "projects/13-qrCodeGenerator/index.html",
+  },
+  {
     id: "...",
     title: "Comming Soon",
     url: "#",

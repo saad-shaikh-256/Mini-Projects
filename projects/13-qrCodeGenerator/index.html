@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Hugeicons -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+  </head>
+
+  <body class="flex-Center bg-linear-to-br from-sky-500 to-blue-500">
+    <div
+      class="main-Contain bg-white h-fit w-[400px] max-w-4/5 p-6 rounded-2xl shadow-lg relative flex-Center pt-20 gap-6 flex-col"
+    >
+      <div
+        class="emoji-Container text-5xl bg-linear-to-br from-blue-500 to-sky-500 flex-Center w-24 h-24 rounded-full border-8 border-white absolute -top-12 shadow-md text-white"
+      >
+        ⛶
+      </div>
+      <div class="text-center flex flex-col gap-1">
+        <h1 class="text-2xl font-bold text-gray-800">QR Code Generator</h1>
+        <p class="text-sm text-gray-500">Powered by qrserverAPI</p>
+      </div>
+      <input
+        type="search"
+        id="qr-Input"
+        placeholder="Enter URL or text"
+        class="h-fit border w-full py-3 px-6 rounded-xl bg-neutral-50 border-neutral-200 outline-none focus-within:border-blue-500"
+      />
+
+      <!-- QR Code IMAGE -->
+      <div
+        class="generated-Image border h-fit w-full flex-Center p-4 rounded-xl border-neutral-200 shadow-xs hidden"
+      >
+        <img src="" class="w-full h-auto qr-Image" alt="" />
+      </div>
+      <button
+        class="generate-Btn w-full bg-gradient-to-br from-sky-500 to-blue-500 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
+      >
+        Generate QR Code
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -84,3 +84,4 @@ searchInput.addEventListener("keyup", (e) => {
 
 // Listen for click on the search button
 searchButton.addEventListener("click", handleSearch);
+setupInfoRequest("japan");
