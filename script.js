@@ -65,6 +65,11 @@ const tasks = [
     url: "projects/13-qrCodeGenerator/index.html",
   },
   {
+    id: "14",
+    title: "Random Meme",
+    url: "projects/14-randomMeme/index.html",
+  },
+  {
     id: "...",
     title: "Comming Soon",
     url: "#",
