@@ -75,6 +75,11 @@ const tasks = [
     url: "projects/15-faqAccordion/index.html",
   },
   {
+    id: "16",
+    title: "Password Manager",
+    url: "projects/16-passwordManager/index.html",
+  },
+  {
     id: "...",
     title: "Comming Soon",
     url: "#",

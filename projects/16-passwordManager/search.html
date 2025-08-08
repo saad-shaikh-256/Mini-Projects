@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Mini Project</title>
+    <!-- Tailwind -->
+    <link href="../../src/output.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../public/Logo/JavaScript.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Hugeicons -->
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+  </head>
+
+  <body class="flex-Center bg-linear-to-br from-sky-500 to-blue-500">
+    <div
+      class="main-Contain bg-white h-fit w-[400px] max-w-9/10 p-6 rounded-2xl shadow-lg relative flex-Center pt-20 gap-10 flex-col"
+    >
+      <!-- Emoji Container -->
+      <div
+        class="emoji-Container text-5xl bg-linear-to-br from-blue-500 to-sky-500 flex-Center w-24 h-24 rounded-full border-8 border-white absolute -top-12 shadow-md text-white"
+      >
+        🔓
+      </div>
+
+      <!-- Heading Container -->
+      <div class="text-center flex flex-col gap-1">
+        <h1 class="text-2xl font-bold text-gray-800">Password Manager</h1>
+        <p class="text-sm text-gray-500">Powered by localStorage</p>
+      </div>
+
+      <!-- Error Container -->
+      <div
+        class="error-Container h-fit bg-red-50 text-red-500 w-full text-center py-3 px-6 rounded-xl border border-red-100"
+        id="error-Container"
+      >
+        <!-- Error message will be displayed by JS -->
+      </div>
+
+      <form id="search-Password" class="h-fit w-full flex-Center flex-col gap-10">
+        <!-- Input Container -->
+        <div class="input-Wrapper h-fit w-full flex flex-col gap-3">
+          <input
+            type="search"
+            id="website-Input"
+            placeholder="Enter Website"
+            class="h-fit border w-full py-3 px-6 rounded-xl bg-neutral-50 border-neutral-200 outline-none focus-within:border-blue-500"
+          />
+          <!-- Details Container -->
+          <div
+            id="details-Container"
+            class="h-fit w-full p-6 border rounded-xl border-blue-200 bg-blue-50"
+          >
+            <div class="details-Heading font-semibold text-lg text-neutral-800">
+              Retrieved Credential
+            </div>
+            <div class="details-Wrapper">
+              <div
+                class="website-Wrapper font-medium text-sm text-neutral-600"
+              >
+                Website :
+                <span id="retrieved-Website" class="font-normal"></span>
+              </div>
+              <div class="email-Wrapper font-medium text-sm text-neutral-600">
+                Email : <span id="retrieved-Email" class="font-normal"></span>
+              </div>
+              <div
+                class="password-Wrapper font-medium text-sm text-neutral-600"
+              >
+                Password :
+                <span id="retrieved-Password" class="font-normal"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-fit w-full flex-Center flex-col gap-4">
+          <button
+            id="search-Button"
+            type="submit"
+            class="generate-Btn w-full bg-gradient-to-br from-sky-500 to-blue-500 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
+          >
+            Retrieved Password
+          </button>
+          <a
+            href="index.html"
+            class="h-fit w-full text-center font-medium text-blue-500 cursor-pointer"
+            >Add Password</a
+          >
+        </div>
+      </form>
+    </div>
+    <script src="search.js"></script>
+  </body>
+</html>
