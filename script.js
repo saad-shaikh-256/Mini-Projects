@@ -70,6 +70,11 @@ const tasks = [
     url: "projects/14-randomMeme/index.html",
   },
   {
+    id: "15",
+    title: "FAQ Accordion",
+    url: "projects/15-faqAccordion/index.html",
+  },
+  {
     id: "...",
     title: "Comming Soon",
     url: "#",
